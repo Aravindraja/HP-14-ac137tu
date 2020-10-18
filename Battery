@@ -55,7 +55,7 @@ into method label GBTI code_regex \(BDN0, replaceall_matched begin (RDN0(), end;
 
 # deal with 128-bit BMN0 BCT0
 into device label H_EC code_regex (BMN0,)\s+(128) replace_matched begin BCTX,%2,//%1%2 end;
-into device label H_EC insert begin Method (RCT0, 0, Serialized) { Return(RECB(0x30,128)) } end;
+into device label H_EC insert begin Method (RMN0, 0, Serialized) { Return(RECB(0x30,128)) } end;
 into method label GBTI code_regex \(BMN0, replaceall_matched begin (RCT0(), end;
 
 into device label H_EC code_regex (BCT0,)\s+(128) replace_matched begin BCTX,%2,//%1%2 end;
